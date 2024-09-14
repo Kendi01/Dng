@@ -37,16 +37,16 @@ text-align: center;
     position: relative;
     opacity: 0.8; /* Fully visible by default */
     padding: 0.5em; /* Optional padding to ensure spacing */
-
-
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* Image Styling within .columns */
 .image-fit {
     padding: 2px;
-    width: 320px;  /* Set a fixed width */
-    height: 200px; /* Set a fixed height */
+    width: 350px;  /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
     object-fit: cover; /* This will ensure that the image covers the box without stretching */
     display: block; /* Ensure images are treated as block-level elements for consistent sizing */
     margin: 0 auto; /* Center images within their containers if necessary */
@@ -136,6 +136,7 @@ text-decoration: none;
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 /* Remove conflicting styles or duplicates */
 .row.column {
