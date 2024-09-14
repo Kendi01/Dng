@@ -3326,3 +3326,23 @@ input, select, textarea {
 			}
 
 		}
+		/*about*/
+		.about{
+			height:auto;
+			 border: none; 
+		}
+		@media screen and (max-width: 480px){
+			.about{
+				height: 300px;
+			}
+			.inner{
+
+				margin-inline: 2rem;
+			}
+		}
+		.head{
+			font-family: 'pacifico',cursive;
+			font-size: 15px;
+			 color: rgb(6, 50, 92);
+			 float: right;
+		}

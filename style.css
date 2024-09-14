@@ -42,7 +42,7 @@ body{
    
 }
 .link{
-    color: rgb(182, 182, 182);
+    color: rgb(116, 111, 111);
     text-decoration: none;
     font-size: 17px;
 }
@@ -57,8 +57,25 @@ li{
     list-style: none;
 }
 li:hover{
-    background: rgb(207, 114, 59);
+    background: rgb(231, 87, 4);
 }
 .fa{
     padding: 15px;
+}
+@media screen and (max-width: 480px) {
+    .logo{
+        width: 390px;
+    }
+
+    .nav {
+      justify-content: center;
+      margin: 10px;
+    }
+}
+.fa{
+text-decoration: none;
+color:rgb(228, 148, 101);
+}
+.fa:hover{
+color: rgb(97, 95, 92);
 }
