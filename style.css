@@ -57,8 +57,8 @@ li{
     list-style: none;
 }
 li:hover{
-    background: rgb(201, 151, 122);
-    color: black;
+    background: rgb(224, 179, 153);
+    
 }
 .fa{
     padding: 15px;
