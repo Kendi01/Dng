@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Pacifico&family=Shadows+Into+Light&display=swap');
+
+body:before, body:after {
+    display: none;
+}
+nav{
+padding: 0;
+}
+.logo{
+    width: 200px;
+}
+ul,li{
+    list-style: none;
+    text-decoration: none;
+}
+header{
+text-align: center;
+}/* Flex Container Styling */
+/*
+
+
+*/
+
+/* .column Styling */
+
+/* .column Styling */
+.column {
+    -moz-transition: -moz-transform 1s ease, opacity 1s ease; /* For Firefox */
+    -webkit-transition: -webkit-transform 1s ease, opacity 1s ease; /* For Safari */
+    -ms-transition: -ms-transform 1s ease, opacity 1s ease; /* For IE 10 */
+    transition: transform 1s ease, opacity 1s ease; /* Modern browsers */
+    -moz-transform: translateX(0); /* For Firefox */
+    -webkit-transform: translateX(0); /* For Safari */
+    -ms-transform: translateX(0); /* For IE 10 */
+    transform: translateX(0); /* Modern browsers */
+    /* Ensure column width is appropriate */
+    position: relative;
+    opacity: 0.8; /* Fully visible by default */
+    padding: 0.5em; /* Optional padding to ensure spacing */
+
+
+}
+
+
+/* Image Styling within .columns */
+.image-fit {
+    padding: 2px;
+    width: 320px;  /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* This will ensure that the image covers the box without stretching */
+    display: block; /* Ensure images are treated as block-level elements for consistent sizing */
+    margin: 0 auto; /* Center images within their containers if necessary */
+}
+
+/* Transition Delay for .columns */
+.column:nth-last-child(1n) { transition-delay: 0.05s; }
+.column:nth-last-child(2n) { transition-delay: 0.1s; }
+ .column:nth-last-child(3n) { transition-delay: 0.15s; }
+.column:nth-last-child(4n) { transition-delay: 0.2s; }
+.column:nth-last-child(5n) { transition-delay: 0.25s; }
+.column:nth-last-child(6n) { transition-delay: 0.3s; }
+ .column:nth-last-child(7n) { transition-delay: 0.35s; }
+ .column:nth-last-child(8n) { transition-delay: 0.4s; }
+.column:nth-last-child(9n) { transition-delay: 0.45s; }
+ .column:nth-last-child(10n) { transition-delay: 0.5s; }
+.column:nth-last-child(11n) { transition-delay: 0.55s; }
+.column:nth-last-child(12n) { transition-delay: 0.6s; }
+ .column:nth-last-child(13n) { transition-delay: 0.65s; }
+ .column:nth-last-child(14n) { transition-delay: 0.7s; }
+ .column:nth-last-child(16n) { transition-delay: 0.8s; }
+.column:nth-last-child(17n) { transition-delay: 0.85s; }
+ .column:nth-last-child(18n) { transition-delay: 0.9s; }
+ .column:nth-last-child(19n) { transition-delay: 0.95s; }
+ .column:nth-last-child(21n) { transition-delay: 1.05s; }
+.column:nth-last-child(23n) { transition-delay: 1.15s; }
+.column:nth-last-child(24n) { transition-delay: 1.2s; }
+
+/* Inactive State Animations */
+
+
+.row.inactive .column {
+    opacity: 0; /* Hide .columns when inactive */
+}
+
+.row.inactive .column.from-left {
+    transform: translateX(-14em); /* Slide from the left */
+}
+
+.row.inactive .column.from-right {
+    transform: translateX(14em); /* Slide from the right */
+}
+
+.row.inactive .column.from-top {
+    transform: translateY(-7em); /* Slide from the top */
+}
+
+.row.inactive .column.from-bottom {
+    transform: translateY(7em); /* Slide from the bottom */
+}
+
+/* Responsive Design */
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .box-container {
+        flex-wrap: nowrap; /* No wrapping for narrow screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .column {
+        width: 100%; /* Full width for each column in narrow screens */
+    }
+}
+
+#footer{
+    text-align: center;
+
+}
+.icons{
+font-size: 25px;
+}
+.fa-brands{
+text-decoration: none;
+ margin: 25px;
+ color: rgb(13, 77, 150);
+}
+.fa-brands:hover{
+    color: rgb(197, 189, 196);
+}
+.menu{
+   
+    font-family: 'dosis',sans-serif;
+    font-weight: 700;
+    word-spacing: 5px;
+}
+.box-container{
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Remove conflicting styles or duplicates */
+.row.column {
+    -moz-transition: -moz-transform 1s ease, opacity 1s ease; /* For Firefox */
+    -webkit-transition: -webkit-transform 1s ease, opacity 1s ease; /* For Safari */
+    -ms-transition: -ms-transform 1s ease, opacity 1s ease; /* For IE 10 */
+    transition: transform 1s ease, opacity 1s ease; /* Modern browsers */
+    -moz-transform: translateX(0); /* For Firefox */
+    -webkit-transform: translateX(0); /* For Safari */
+    -ms-transform: translateX(0); /* For IE 10 */
+    transform: translateX(0); /* Modern browsers */
+    width: 45%;
+    position: relative;
+    opacity: 0.7; /* Fully visible by default */
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+justify-content: center;   
+}
+
